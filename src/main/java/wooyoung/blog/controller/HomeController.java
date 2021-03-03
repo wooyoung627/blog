@@ -1,14 +1,30 @@
 package wooyoung.blog.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import wooyoung.blog.dao.HomeDao;
+import wooyoung.blog.dto.HomeDto;
+
+import java.util.List;
 
 @Controller
 public class HomeController {
+    @Autowired
+    HomeDao homeDao;
 
     @GetMapping("/")
-    public String home(Model model){
+    public String home(){
         return "home/index";
+    }
+
+    @GetMapping("/signup")
+    public String success(String name, String phone){
+        homeDao.ins(name, phone);
+        List<HomeDto> homeDtoList = homeDao.sel();
+        for(HomeDto homeDto : homeDtoList){
+            System.out.println(homeDto);
+        }
+        return "home/success";
     }
 }
