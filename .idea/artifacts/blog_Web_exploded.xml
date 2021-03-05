@@ -27,6 +27,13 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:5.2.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:5.2.13.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.13.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-acl:5.3.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-config:5.3.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.3.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-taglibs:5.3.8.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework.security:spring-security-web:5.3.8.RELEASE" />
+          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
         </element>
       </element>
     </root>

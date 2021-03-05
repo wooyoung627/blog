@@ -11,12 +11,13 @@
     <title>Title</title>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/signup" method="get">
+<form action="${pageContext.request.contextPath}/loginAsk" method="post">
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
     이름 : <label>
-    <input type="text" name="name">
+    <input type="text" name="userId">
 </label><br>
-    전화번호 : <label>
-    <input type="text" name="phone">
+    비밀번호 : <label>
+    <input type="text" name="userPw">
 </label><br>
     <input type="submit" value="전송">
 </form>

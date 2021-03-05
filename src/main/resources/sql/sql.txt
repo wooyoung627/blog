@@ -1,0 +1,15 @@
+// 사용자 테이블
+create table blog.user(
+user_id text primary key,
+user_pw text not null,
+isaccountnonexpired boolean,
+isaccountnonlocked boolean,
+iscredentialsnonexpired boolean,
+isenabled boolean
+)
+
+// 권한 테이블
+create table blog.authority(
+user_id text not null,
+authority_name text not null
+)

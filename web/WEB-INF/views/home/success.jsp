@@ -12,6 +12,6 @@
 </head>
 <body>
 <h3>SUCCESS!</h3>
-<a href="${pageContext.request.contextPath}/">첫 페이지로</a>
+<a href="${pageContext.request.contextPath}/login">첫 페이지로</a>
 </body>
 </html>
